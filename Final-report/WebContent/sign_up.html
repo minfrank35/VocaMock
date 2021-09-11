@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TVT 회원가입</title>
+<link rel="stylesheet" type="text/css" href="button.css">
+<style>
+*{
+font-family:sans-serif;
+}
+body {
+	background-color : #0B4C5F;
+}
+#loginForm { /* form은 블럭요소이다.*/
+	text-align: center;
+	position: absolute;
+	display: inline-block;
+	padding: 1% 5% 1% 5%;
+	background-color: white;
+	top: 10%;
+	left: 35%;
+	border-radius: 2em;
+}
+
+.inForm {
+	margin: 8% 0 8% 0;
+	border-bottom : 2px solid gray;
+	width : 20em;
+}
+
+.text {
+	
+	width: 100%;
+  	font-size:20px;
+  	height:30px;
+  	border: none;
+  	
+}
+h2 {
+font-size : 40px;
+
+}
+
+</style>
+</head>
+<body>
+
+	<form action="login.do/join"  id="loginForm">
+		<h2>TVT Center</h2>
+		<div class="inForm">
+			<input type="text" name="joinId" class="text" placeholder="아이디(최대글자수:15)"
+				required />
+		</div>
+		<div class="inForm">
+			<input type="password" name="joinPw" class="text" placeholder="비밀번호(최대글자수:15)"
+				required />
+		</div>
+		<div class="inForm">
+			<input type="password" name="joinPwCheck" class="text" placeholder="비밀번호확인"
+				required />
+		</div>
+		<div class="inForm">
+			<input type="text" name="joinName" class="text" placeholder="이름"
+				required />
+		</div>
+		<div class="inForm">
+			<input type="text" name="joinBirth" class="text" placeholder="생년(형식 :0000-00-00)"
+				required />
+		</div>
+		<div class="inForm">
+			<input type="text" name="joinEmail" class="text" placeholder="이메일"
+				required/>
+		</div>
+		<div>
+			<input type="submit" class="button" value="sign up" /> 
+			<input type="reset" class="button" value="reset"/>
+		</div>
+	</form>
+</body>
+</html>
